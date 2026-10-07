@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RamZan DuLLu | Social Media Marketing Specialist</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f7fb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f172a, #2563eb);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 20px;
+      max-width: 700px;
+      margin: 0 auto 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #22c55e;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    .about, .services, .contact, .questions {
+      background: white;
+      margin-bottom: 25px;
+      border-radius: 14px;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #0f172a;
+    }
+
+    .services-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+
+    .service-card {
+      background: #eff6ff;
+      padding: 20px;
+      border-radius: 10px;
+      border-left: 5px solid #2563eb;
+    }
+
+    form {
+      display: grid;
+      gap: 15px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    button {
+      background: #2563eb;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    .phone {
+      font-size: 22px;
+      font-weight: bold;
+      color: #16a34a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0f172a;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>RamZan DuLLu</h1>
+    <p>Social Media Marketing Specialist - Grow your business with smart marketing, better reach, and powerful online branding.</p>
+    <a class="btn" href="tel:03417347363">Call Now: 03417347363</a>
+  </header>
+
+  <section>
+    <div class="about">
+      <h2>About Me</h2>
+      <p>
+        Assalam-o-Alaikum! Mera naam <strong>RamZan DuLLu</strong> hai. Main ek
+        <strong>Social Media Marketing Specialist</strong> hoon. Main businesses,
+        brands aur personal profiles ko social media par grow karne mein help karta hoon.
+      </p>
+    </div>
+
+    <div class="services">
+      <h2>My Services</h2>
+      <div class="services-list">
+        <div class="service-card">Facebook Marketing</div>
+        <div class="service-card">Instagram Growth</div>
+        <div class="service-card">Social Media Strategy</div>
+        <div class="service-card">Paid Ads Management</div>
+        <div class="service-card">Content Planning</div>
+        <div class="service-card">Brand Promotion</div>
+      </div>
+    </div>
+
+    <div class="questions">
+      <h2>Ask a Question</h2>
+      <form onsubmit="sendToWhatsApp(event)">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="text" id="question" placeholder="Write your question" required />
+        <button type="submit">Send Question</button>
+      </form>
+    </div>
+
+    <div class="contact">
+      <h2>Contact Me</h2>
+      <p>If you want social media marketing services, contact me directly:</p>
+      <p class="phone">03417347363</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 RamZan DuLLu - Social Media Marketing Specialist</p>
+  </footer>
+
+  <script>
+    function sendToWhatsApp(event) {
+      event.preventDefault();
+      const name = document.getElementById("name").value;
+      const question = document.getElementById("question").value;
+      const message = `Assalam-o-Alaikum, mera naam ${name} hai. Mera sawal: ${question}`;
+      const phone = "923417347363";
+      const url = `[wa.me](https://wa.me/${phone}?text=${encodeURIComponent(message)})`;
+      window.open(url, "_blank");
+    }
+  </script>
+
+</body>
+      </html>
+      
